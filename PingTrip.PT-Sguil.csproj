@@ -1,0 +1,187 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6E7D720-2CA3-484C-AA04-1BD4C31A88D6}</ProjectGuid>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>PT-Sguil</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>PT_Sguil</RootNamespace>
+    <ApplicationIcon>PT-SguilIcon.ico</ApplicationIcon>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxForm.Designer.cs">
+      <DependentUpon>AboutBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationPromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthenticationPromptForm.Designer.cs">
+      <DependentUpon>AuthenticationPromptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventCommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventCommentForm.Designer.cs">
+      <DependentUpon>EventCommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FetchWireSharkPCAPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FetchWireSharkPCAPForm.Designer.cs">
+      <DependentUpon>FetchWireSharkPCAPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportExportForm.Designer.cs">
+      <DependentUpon>ReportExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SensorSelectForm.Designer.cs">
+      <DependentUpon>SensorSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPFlagsEnum.cs" />
+    <Compile Include="ToolEncoderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolEncoderForm.Designer.cs">
+      <DependentUpon>ToolEncoderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XscriptWinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XscriptWinForm.Designer.cs">
+      <DependentUpon>XscriptWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPAddressExtensions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="EventPriorityConfig.cs" />
+    <Compile Include="ConfigurationSupport.cs" />
+    <Compile Include="ExternalData.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="RichTextBoxSynchronizedScroll.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SguildCommands.cs" />
+    <Compile Include="SguildConnection.cs" />
+    <Compile Include="SguilEvent.cs" />
+    <Compile Include="SensorStatus.cs" />
+    <Compile Include="SnortStatus.cs" />
+    <Compile Include="SyncronizedList.cs" />
+    <Compile Include="ProtocolFlagsEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBoxForm.resx">
+      <DependentUpon>AboutBoxForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthenticationPromptForm.resx">
+      <DependentUpon>AuthenticationPromptForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventCommentForm.resx">
+      <DependentUpon>EventCommentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FetchWireSharkPCAPForm.resx">
+      <DependentUpon>FetchWireSharkPCAPForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportExportForm.resx">
+      <DependentUpon>ReportExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorSelectForm.resx">
+      <DependentUpon>SensorSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolEncoderForm.resx">
+      <DependentUpon>ToolEncoderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XscriptWinForm.resx">
+      <DependentUpon>XscriptWinForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PT-SguilIcon.ico" />
+    <Content Include="PT-Sguil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
