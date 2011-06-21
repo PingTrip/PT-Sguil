@@ -1,7 +1,8 @@
 ﻿using System.Resources;
+using System.Reflection;
 // Assembly PT-Sguil, Version 1.0.0.0
 
-[assembly: System.Reflection.AssemblyVersion("1.0.*")]
+[assembly: System.Reflection.AssemblyVersion("1.1.0.0")]
 [assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
 [assembly: System.Reflection.AssemblyTitle("PT-Sguil")]
 [assembly: System.Reflection.AssemblyDescription("C# Client for Sguil (http://sguil.sourceforge.net/)\r\n\r\nIcons courtesy of the 'Silk Icon' set from:\r\nhttp://www.famfamfam.com/lab/icons/silk/")]
@@ -17,3 +18,4 @@
 [assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
 
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
+[assembly: AssemblyFileVersionAttribute("1.1.0.0")]
